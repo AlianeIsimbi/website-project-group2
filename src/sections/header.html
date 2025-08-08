@@ -1,6 +1,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
+ 
 <div>
     <!-- Header-->
+
      <header class="p-4">
          <div class="flex justify-between items-center lg:items-start">
              <div class=" flex text-sm flex-col lg:text-lg">
@@ -16,10 +18,10 @@
                  <span>References</span>
                  <span>Contact</span>    
              </nav>
-             <button id="hamburger" class="flex flex-col space-y-1 p-2 lg:hidden">
-                <div class="w-6 h-0.5 bg-black transition-all duration-300" id="line1" style="transform-origin:center"></div>
-                <div class="w-6 h-0.5 bg-black transition-all duration-300" id="line2" style="transform-origin:center"></div>
-                <div class="w-6 h-0.5 bg-black transition-all duration-300" id="line3" ></div>
+             <button id="hamburger" class="flex flex-col bg-black bg-[url('/Image/vector9.jpg')] bg-cover bg-center space-y-1 p-2 justify-center items-center w-8 h-8 lg:hidden">
+                <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line1" style="transform-origin:center"></div>
+                <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line2" style="transform-origin:center"></div>
+                <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line3" style="transform-origin:center" ></div>
              </button>
          </div>
          <nav id="mobileMenu" class="hidden">
@@ -31,44 +33,6 @@
             </div>
          </nav>
      </header>
-     <script>
-        const hamburger = document.getElementById('hamburger')
-        const mobileMenu = document.getElementById('mobileMenu')
-        const line1 = document.getElementById('line1')
-        const line2 = document.getElementById('line2')
-        const line3 = document.getElementById('line3')
-        
-        let isOpen = false;
-
-        hamburger.addEventListener('click', () =>{
-            if(!isOpen){
-                mobileMenu.classList.remove('hidden')
-                line1.style.transform = 'rotate(45deg) translate(6px, 6px)';
-                line2.style.opacity = '0';
-                line3.style.transform = 'rotate(-45deg) translate(6px, -6px)';
-
-                isOpen = true;
-            }else{
-                mobileMenu.classList.add('hidden')
-                line1.style.transform = 'rotate(0) translate(0px, 0px)';
-                line2.style.opacity = '1';
-                line3.style.transform = 'rotate(0) translate(0px, 0px)';
-
-                isOpen = false;
-            }
-        })
-        const mobileLinks = document.querySelectorAll('a');
-        mobileLinks.forEach(link =>{
-            link.addEventListener('click', ()=>{
-                mobileMenu.classList.add('hidden');
-                line1.style.transform = 'rotate(0) translate(0, 0)';
-                line2.style.opacity = '1';
-                line3.style.transform = 'rotate(0) translate(0, 0)';
-
-                isOpen = false;
-            })
-        })
-
-     </script>
+     
 
 </div>

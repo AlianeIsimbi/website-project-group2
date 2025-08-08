@@ -21,6 +21,10 @@
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', 'src/sections/footer.html');
+
+        const script = document.createElement('script');
+        script.src = 'src/Javascript/script.js';
+        document.body.appendChild(script);
     }
 </script>
 <body>
