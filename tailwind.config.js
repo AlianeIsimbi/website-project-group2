@@ -5,13 +5,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         'vector': "url('./Image/vector9.png')",
-      }
+      },
+ fontFamily: {
+        nunito: ['Noto Sans', 'sans-serif'],
+
     },
   },
   plugins: [],
 }
-
-
-
-
+}
 
