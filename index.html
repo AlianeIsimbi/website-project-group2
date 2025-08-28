@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website project template</title>
@@ -21,8 +20,13 @@
         loadComponents('hero', 'src/sections/hero.html');
         loadComponents('about', 'src/sections/about.html');
         loadComponents('services', 'src/sections/services.html');
+        loadComponents('reference', 'src/sections/reference.html');
         // loadComponents('imprint', 'src/sections/imprint.html');
         loadComponents('footer', 'src/sections/footer.html');
+
+        const script = document.createElement('script');
+        script.src = 'src/Javascript/script.js';
+        document.body.appendChild(script);
         
     }
 </script>
@@ -31,7 +35,7 @@
     <div id="hero"></div>
     <div id="about"></div>
     <div id="services"></div>
-    <div id="References"></div>
+    <div id="reference"></div>
     <div id="imprint"></div>
     <!-- <div id="contact"></div> -->
     <div id="footer"></div>
@@ -42,8 +46,33 @@
         // loadComponents('contact', 'src/sections/contact.html');
     // loadComponents('Policy', 'src/sections/Policy.html');
     // loadComponents('footer', 'src/sections/footer.html');
+=======
+<body>
+    <div id="header"></div>
+    <div id="hero"></div>
+    <div id="services"></div>
+    <div id="contact"></div>
+    <div id="imprint"></div>
+    <div id="footer"></div>
 
+    <script>
+        const loadComponents = (id, url) => {
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    const container = document.getElementById(id);
+                    if (container) container.innerHTML = html;
+                });
+        };
+>>>>>>> 017259d8f140fd0ee4c56c78cf451210cd5b3420
 
+        window.onload = () => {
+            // loadComponents('header', 'src/sections/header.html');
+            // loadComponents('hero', 'src/sections/hero.html');
+            loadComponents('services', 'src/sections/services.html');
+            // loadComponents('contact', 'src/sections/contact.html');
+            // loadComponents('Policy', 'src/sections/Policy.html');
+            // loadComponents('footer', 'src/sections/footer.html');
         // const script = document.createElement('script');
         // script.src = 'src/Javascript/script.js';
         // document.body.appendChild(script);
@@ -57,5 +86,11 @@
     <!--<div id="Policy"></div>-->
     <!--<div id="footer"></div> -->
 
+
+            <!-- // const script = document.createElement('script');
+            // script.src = 'src/Javascript/script.js';
+            // document.body.appendChild(script);
+        };
+    </script> -->
 </body>
 </html>
