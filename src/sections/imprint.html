@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'outfit': ['Outfit', 'sans-serif']
+                    },
+                    screens: {
+                        'tablet': '768px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-outfit">
+    <div class="mx-2 px-2 py-8 lg:mx-12 max-w-6xl">
+        <h1 class="text-2xl font-bold text-green-700 mt-10 mb-2 md:text-sm lg:text-sm md:mx-12">IMPRINT</h1>
+        
+        <div class="flex flex-col md:flex-row md:justify-between text-green-700 text-sm md:mx-12 md:gap-x-10">
+            <div class="flex flex-col space-y-10 text-2xl md:text-3xl lg:text-4xl">
+                <!-- Company Information -->
+                <section class="space-y-1">
+                    <p class="font-bold">Agentur Baumeister</p>
+                    <p>Katrein Baumeister</p>
+                    <p>Böckhstraße 13</p>
+                    <p>10967 Berlin</p>
+                </section>
+                <!-- Contact Information -->
+                <section class="space-y-1">
+                    <p class="font-medium">+49 (0)30 - 490 827 87</p>
+                    <p class="font-medium">hallo@agentur-baumeister.com</p>
+                </section>
+                <!-- Tax Information -->
+                <section class="space-y-1">
+                    <p class="font-bold">UST-IDNR.</p>
+                    <p>DE 274 486 923</p>
+                </section>
+                <!-- Registered Office -->
+                <section class="space-y-1">
+                    <p class="font-bold">REGISTERED OFFICE</p>
+                    <p>Berlin, Germany</p>
+                </section>
+            </div>
+            <div class="md:max-w-sm self-end">
+                <section class="mt-8 pt-8 md:mt-0">
+                    <h2 class="font-bold text-green-700 mb-5 text-2xl lg:text-2xl md:text-right">DISCLAIMER</2>
+                    <p class="text-2xl lg:text-sl md:text-[20px] md:text-right">
+                        Despite all due care, no liability can be accepted for the accuracy, completeness and up-to-dateness of the information provided. The same applies to third-party websites to which www.agentur-baumeister.com refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister accepts no liability for the content of these websites.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
