@@ -6,7 +6,14 @@ module.exports = {
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
       },
+      backgroundImage: {
+        'vector': "url('./Image/vector9.png')",
+      },
+ fontFamily: {
+        nunito: ['Noto Sans', 'sans-serif'],
     },
   },
   plugins: [],
 }
+}
+

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Website project template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <script>
     const loadComponents = (id, url) =>  {
@@ -29,5 +30,27 @@
     <div id="imprint"></div>
     <div id="contact"></div>
     <div id="footer"></div>
+
+       // loadComponents('header', 'src/sections/header.html');
+      //  loadComponents('hero', 'src/sections/hero.html');
+        loadComponents('services', 'src/sections/services.html');
+        // loadComponents('contact', 'src/sections/contact.html');
+    // loadComponents('Policy', 'src/sections/Policy.html');
+    // loadComponents('footer', 'src/sections/footer.html');
+
+
+        // const script = document.createElement('script');
+        // script.src = 'src/Javascript/script.js';
+        // document.body.appendChild(script);
+ }
+</script>
+<body>
+    <!-- <div id="header"></div>-->
+    <!--<div id="hero"></div>-->
+    <div id="services"></div>
+    <!--<div id="contact"></div>-->
+    <!--<div id="Policy"></div>-->
+    <!--<div id="footer"></div> -->
+
 </body>
 </html>
