@@ -5,13 +5,13 @@
     <!-- Header-->
 
      <header class="p-4 bg-gray-100">
-         <div class="flex justify-between text-green-800 items-center lg:items-start">
+         <div class="flex justify-between items-center lg:items-start">
              <div class=" flex text-sm flex-col lg:text-lg">
                  <span>DE</span>
                  <span>EN</span>
              </div>
              <div>
-                 <h1 class="font-bold text-2xl lg:text-3xl">Baumeister</h1>
+                <h1 class="font-bold text-2xl lg:text-3xl">Baumeister</h1>
              </div>
              <nav class="hidden lg:flex lg:flex-col text-right font-semibold space-y-1">
                  <span><a href="/index.html">About</a></span>
@@ -19,18 +19,22 @@
                  <span><a href="#reference">References</a></span>
                  <span><a href="../../Imprint.html">Contact</a></span>    
              </nav>
-             <button id="hamburger" class="flex flex-col bg-black bg-[url('/Image/vector9.jpg')] bg-cover bg-center space-y-1 p-2 justify-center items-center w-8 h-8 lg:hidden">
+             <!-- <button id="hamburger" class="flex flex-col bg-[url('../Image/vector9.jpg')] bg-cover bg-no-repeat p-2 justify-center items-center w-8 h-8 lg:hidden">
                 <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line1" style="transform-origin:center"></div>
                 <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line2" style="transform-origin:center"></div>
                 <div class="w-6 h-0.5 bg-white transition-all duration-300 ease-in-out" id="line3" style="transform-origin:center" ></div>
-             </button>
+             </button> -->
+             <div id='hamburger'class="lg:hidden bg-[url('./src/Image/vector9.svg')] bg-cover px-4 font-bold">
+                <span class="hamburger text-white" id="burger">☰</span>
+                <span class="cross hidden text-white" id="con">✕</span>
+            </div>
          </div>
          <nav id="mobileMenu" class="hidden">
-            <div class="flex flex-col space-y-3 font-bold text-center pt-8 text-green-800 text-2xl">
-                <a>About</a>
-                <a>Services</a>
-                <a>References</a>
-                <a>Contact</a>
+            <div class="flex flex-col space-y-3 font-bold text-center pt-8 text-2xl">
+                 <span><a href="/index.html">About</a></span>
+                 <span><a href="#services">Services</a></span>
+                 <span><a href="#reference">References</a></span>
+                 <span><a href="../../Imprint.html">Contact</a></span>   
             </div>
          </nav>
      </header>
